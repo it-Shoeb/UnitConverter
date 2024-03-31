@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- boxixons css cdn -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="overlay">
+        UNIT CONVERTER
+    </div>
+    <div class="body">
+      <header>
+        <nav class="navbar">
+          <ul>
+            <li class="active">
+              <a href="#">
+                <i class="bx bx-ruler"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="bx bxs-thermometer"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="bx bx-dollar"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="bx bx-test-tube"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="bx bx-dumbbell"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <form action="" method="post" id="form">
+        <div class="form-t flex-wrap">
+          <input
+            type="number"
+            name="toValue"
+            id="toValue"
+            placeholder="Insert your Value Here"
+          />
+          <p class="empty">Please Put Some Values In Input Area to Calculate</p>
+          <select name="toUnit" id="toUnit">
+            <option value="1">kilometer</option>
+            <option value="2">meter</option>
+            <option value="3">centimeter</option>
+            <option value="4">milliemeter</option>
+          </select>
+        </div>
+
+        <div class="form-b flex-wrap">
+          <input
+            type="number"
+            name="fromValue"
+            id="fromValue"
+            placeholder="Result"
+            disabled
+          />
+          <select name="fromUnit" id="fromUnit">
+            <option value="1">kilometer</option>
+            <option value="2" selected>meter</option>
+            <option value="3">centimeter</option>
+            <option value="4">milliemeter</option>
+          </select>
+        </div>
+        <input type="submit" value="Calculate" class="submit" />
+      </form>
+
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
